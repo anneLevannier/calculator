@@ -8,6 +8,26 @@
 	font: bold 14px Arial, sans-serif;
 }
 
+header{
+	background:#fff;
+  border:1px solid #ccc;
+}
+
+header h1{
+	text-align: center;
+	padding: 5px;
+	color: #000;
+	text-transform: capitalize;
+	font-size: 2em;
+}
+
+header img{
+	width: 48px;
+	height: 48px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
 /* Finally adding some IE9 fallbacks for gradients to finish things up */
 
 /* A nice BG gradient */
