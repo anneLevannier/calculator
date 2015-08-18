@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+</head>
+<body>
+<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		  <%= link_to 'C', clear_path, class: 'clear'  %>
+		<div class="screen"><%= @result %></div>
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		  <%= link_to '+', operator_path('+'), class: 'operator' %>
+	    <%= link_to '-', operator_path('-'), class: 'operator' %>
+		  <%= link_to '÷', operator_path('÷'), class: 'operator' %>
+		  <%= link_to 'x', operator_path('x'), class: 'operator' %>
+		
+		<% (0..9).each do |i| %>
+       <%= link_to i, number_path(i)%>
+    <% end %>
+	
+		 <%= link_to '.', show_path %>
+		 <%= link_to '=', eval_path, class: 'eval' %>
+	</div>
+</div>
+</body>
+</html>
