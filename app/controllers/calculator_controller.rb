@@ -7,26 +7,27 @@ end
 
 def clear
   @@calc.clear
-  @result = @@calc.result
-  render "calculator/show"
+  renderView
 end
 
 def operator
-  @@calc.operator(params[:op])
-  @result = @@calc.result
-  render "calculator/show"
+    @@calc.operator(params[:op])
+    renderView
 end
 
 def number
-  @@calc.number(params[:num])
-  @result = @@calc.result
-  render "calculator/show"
+    @@calc.number(params[:num])
+    renderView
 end
 
 def eval
   @@calc.eval
-  @result = @@calc.result
-  render "calculator/show"
+  renderView
+end
+
+def renderView
+    @result = @@calc.result
+    render "calculator/show"
 end
 
 end

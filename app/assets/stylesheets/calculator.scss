@@ -56,19 +56,13 @@ a {
 	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Top portion */
-.top a.clear {
-	float: left;
-}
-
 /* Inset shadow on the screen to create indent */
-.top .screen {
+.screen {
 	height: 40px;
-	width: 212px;
-	
-	float: right;
+	width: 275px;
 	
 	padding: 0 10px;
+	margin-bottom: 10px;
 	
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
@@ -84,10 +78,10 @@ a {
 }
 
 /* Clear floats */
-.keys, .top {overflow: hidden;}
+.keys, .screen {overflow: hidden;}
 
 /* Applying same to the keys */
-.keys a, .top a.clear {
+.keys a {
 	float: left;
 	position: relative;
 	top: 0;
@@ -122,7 +116,7 @@ a {
 	color: #888e5f;
 }
 
-.top a.clear {
+.keys a.clear {
 	background: #ff9fa8;
 	box-shadow: 0px 4px #ff7c87;
 	color: white;
@@ -141,7 +135,7 @@ a {
 	color: #ffffff;
 }
 
-.top a.clear:hover {
+.keys a.clear:hover {
 	background: #f68991;
 	box-shadow: 0px 4px #d3545d;
 	color: white;
@@ -158,7 +152,7 @@ a {
 	top: 4px;
 }
 
-.top a.clear:active {
+.keys a.clear:active {
 	top: 4px;
 	box-shadow: 0px 0px #d3545d;
 }

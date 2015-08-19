@@ -9,12 +9,11 @@
 		<h1><%=image_tag("logo.PNG", alt: "Logo")%>The modern times calculator...</h1>
 		
 	</header>
+  
 <div id="calculator">
-	<!-- Screen and clear key -->
-	<div class="top">
-		  <%= link_to 'C', clear_path, class: 'clear'  %>
+	<!-- Screen -->
+	 
 		<div class="screen"><%= @result %></div>
-	</div>
 	
 	<div class="keys">
 		<!-- operators and other keys -->
@@ -27,7 +26,7 @@
        <%= link_to i, number_path(i)%>
     <% end %>
 	
-		 <%= link_to '.', show_path %>
+		 <%= link_to 'C', clear_path, class: 'clear'  %>
 		 <%= link_to '=', eval_path, class: 'eval' %>
 	</div>
 </div>
